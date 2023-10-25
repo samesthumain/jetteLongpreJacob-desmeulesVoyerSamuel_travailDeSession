@@ -1,0 +1,148 @@
+@font-face {
+    font-family: pokemon;
+    src: url(./fonts/Pokemon\ Solid.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: cheeseburger;
+    src: url(./fonts/Cheese\ Burger.otf) format('opentype');
+}
+
+@font-face {
+    font-family: coffe;
+    src: url(./fonts/CoffeCake.ttf) format('truetype');
+}
+
+body{
+  margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+.titrePokemon {
+    display: flex;
+    flex-direction: row;
+    font-family: pokemon;
+    font-size: 36px;
+    letter-spacing: 6px;
+    color: #ffcb05;
+    -webkit-text-stroke: 2px #2a75bb;
+    text-shadow: -6px -0.1px 1px #3c5aa6, 0px 0px 10px white;
+}
+
+.texteDeBienvenue{
+    font-family: coffe;
+    font-size: 40px;
+}
+
+.NomUtilisateur, .MotDePasse, .explication, #ready, .questions, #reponses{
+    font-size: 25px;
+    font-family: cheeseburger;
+}
+
+#form1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    box-shadow: inset 0px 0px 0px 1px #8a774c;
+    width: 80vmin;
+    flex-basis: 300px;
+    background-image: linear-gradient(rgb(51, 31, 5), rgb(138, 76, 5)), url("/images/texture_bois.jpg");
+    background-blend-mode: screen;
+    border: double 10px rgba(00, 00, 00, 0.5);
+    border-radius: 15%;
+    padding: 3vmin;
+    font-family: "text";
+    text-align: center;
+    color: rgb(75, 47, 11);
+}
+
+input{
+    margin: 20px;
+    font-size: 30px;
+    flex-basis: 50px;
+    background-image:url("/images/texture_bois.jpg");
+    background-color: brown;
+    background-blend-mode: screen;
+  }
+
+label{
+    font-size: 30px;
+}
+
+#nom{
+    flex-basis: 50px;
+}
+
+
+/* Tout le code utilisé pour le boutton-01 est obtenu du site suivant : https://getcssscan.com/css-buttons-examples */
+.button-01 {
+  align-self: center;
+  appearance: none;
+  background-color: rgb(75, 47, 11);
+  border: 2px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-01:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-01:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-01:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-01:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+/* Le code copy-paste fini ici */
+
+
+/*Animation pokeball ! */
+.pokeball {
+  animation: shrink 3s forwards;
+  position: absolute;
+}
+
+@keyframes shrink {
+  0% {transform: scale(1); opacity: 1;}
+  100% {transform: scale(0); opacity: 0;}
+}
+ /*Fin animation pokeball */

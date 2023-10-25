@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="body">
+    <img id="pokeball" class="" src="./images/pokeball_bg.png" alt="pokeball_bg"> 
+
+    <div class="titrePokemon">
+        <h1>PoKéMoN</h1>
+    </div>
+    <p class="explication">Le but de ce questionaire est de jauger votre capacité à être un maitre pokémon, utilisez toute l'étendue des vos connaissances de combat pokémon pour obtenir la meilleure note possible!</p>
+    <p id="ready">Êtes-vous prêt?</p>
+    <div class="questions">
+        <p>1 : Combien de types de Pokémon existent?
+        <select name="types" id="types">
+            <option value="faux">15</option>
+            <option value="faux">17</option>
+            <option value="vrai">18</option>
+            <option value="faux">19</option>
+        </select></p> 
+
+        <p>2 : Lequel de ces Pokémons de départ ne peut-on pas choisir dans la région de Kanto ? 
+        <select name="starter" id="starter">
+            <option value="faux">Bulbizarre</option>
+            <option value="faux">Salamèche</option>
+            <option value="faux">Carapuce</option>
+            <option value="vrai">Pikachu</option>
+        </select></p>
+
+        <p>3 : Quels sont les tout premiers jeux Pokémon, sortis sur Game Boy  ?
+        <select name="generation" id="generation">
+            <option value="faux">Pokémon Or et Argent</option>
+            <option value="faux">Pokémon Rubis et Saphir</option>
+            <option value="faux">Pokémon Diamant et Perle</option>
+            <option value="vrai">Pokémon Vert et Rouge</option>
+        </select></p>
+            
+        <p>4 : Quel Pokémon légendaire est associé à la création de l'univers ?
+        <select name="creation" id="creation">
+            <option value="faux">Pikachu</option>
+            <option value="faux">Rechiram</option>
+            <option value="faux">Mew</option>
+            <option value="vrai">Arceus</option>
+        </select></p>
+            
+        <p>5 : Combien de badges faut-il obtenir en général pour pouvoir affronter la Ligue Pokémon ?
+        <select name="badges" id="badges">
+            <option value="vrai">8</option>
+            <option value="faux">9</option>
+            <option value="faux">10</option>
+        </select></p>
+        
+        <p>6 : Quelle équipe criminelle apparaît dans le premier jeux pokemon ?
+        <select name="criminelle" id="criminelle">
+            <option value="vrai">Team Rocket</option>
+            <option value="faux">Team Aqua</option>
+            <option value="faux">Team Magma</option>
+            <option value="faux">Team Galactic</option>
+        </select></p>
+        
+        <p>7 : Quel type de Pokémon est immunisé aux attaques de type Normal ?
+        <select name="immunise" id="immunise">
+            <option value="faux">Ténèbres</option>
+            <option value="vrai">Spectre</option>
+            <option value="faux">Combat</option>
+            <option value="faux">Vol</option>
+        </select></p>
+
+        <p>8 : Quelle est la région de départ dans les jeux Pokémon Soleil et Lune ?
+        <select name="region" id="region">
+            <option value="faux">Kanto</option>
+            <option value="faux">Johto</option>
+            <option value="faux">Hoenn</option>
+            <option value="vrai">Alola</option>
+        </select></p>
+
+        <p>9 : Quelle pierre d'évolution fait évoluer Miaouss en Persian ?
+        <select name="pierreEvo" id="pierreEvo">
+            <option value="faux">Pierre Lune</option>
+            <option value="faux">Pierre Feu</option>
+            <option value="faux">Pierre Foudre</option>
+            <option value="vrai">Aucune pierre nécessaire</option>
+        </select></p>
+        
+        <p>10 : Quel Pokémon évolue en Roucoups ?
+        <select name="evolution" id="evolution">
+            <option value="vrai">Roucool</option>
+            <option value="faux">Piafabec</option>
+            <option value="faux">Canarticho</option>
+            <option value="faux">Rapasdepic</option>
+        </select></p>
+    </div>
+
+    <div id="reponses"></div>
+    <p id="wrapperCompteur">Nombre de vérifications de réponse : <span id="compteur">0</span></p>
+
+    <button class="button-01" type="button" id="submit">soumettre</button>
+    <button class="button-01" type="button" id="depart">C'est parti!</button>
+    <button class="button-01" type="button" id="page1">Retour</button>
+    <script src="script.js"></script>
+</body>
+</html>
